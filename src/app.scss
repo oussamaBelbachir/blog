@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size:62.5%;box-sizing:border-box
+}
+  
+@media only screen and (max-width: 45.75em){html{font-size:55%}}
+ 
+
+  body{
+    font-family: 'Lato', sans-serif;
+    color: #444 !important;
+  }
+  
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+
+ul{
+  list-style: none;
+
+  & li{
+    & a{
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+input,button{
+  outline: none;
+}
+.height{
+    height: 62px;
+    width: 100%;
+}
+
+.imgInsideArticle{
+  max-width: 600px;
+}

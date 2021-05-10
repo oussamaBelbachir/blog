@@ -1,0 +1,26 @@
+.homepage{
+    padding: 2rem;
+    &__articles{
+            display: -ms-grid;
+              display: grid;
+            //   -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-gap: 2rem;
+
+              @media only screen and (max-width: 800px){
+                & {
+                    -ms-grid-columns: 1fr 2rem 1fr;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 2rem;
+                    justify-items: center;
+              }}
+
+              @media only screen and (max-width: 500px){
+                & {
+                    -ms-grid-columns: 1fr 2rem 1fr;
+                    grid-template-columns: 1fr;
+                    grid-gap: 2rem;
+                    justify-items: center;
+              }}
+    }
+}
